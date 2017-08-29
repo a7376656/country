@@ -1,0 +1,124 @@
+.footer{
+    width: 1024px;
+    height: 830px;
+    background: url("../img/index/footer-bg.png") no-repeat;
+    z-index:-1;
+    margin-top: 320px;
+}
+.footer li{
+	list-style: none;
+}
+.footer .foot{
+    width: 1024px;
+    height: 830px;
+    position: relative;
+    margin: 0 auto;
+}
+.foot #up-arrow{
+    width: 37px;
+    height: 37px;
+    background: url("../img/index/up-arrow.png") no-repeat;
+    position: absolute;
+    bottom: 280px;
+    left: 50%;
+    margin-left: -18px;
+}
+.foot .foot-info{
+    position: absolute;
+    left: 104px;
+    bottom: 28px;
+}
+.foot-info li{
+    line-height: 26px;
+    font-size: 12px;
+    color: #535353;
+}
+.foot-info a{
+	text-decoration: none;
+	color: #828282;
+}
+.foot .phone-mail{
+    width: 284px;
+    height: 31px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    margin-left: -142px;
+    background: url("../img/index/phone-bg.png") no-repeat;
+}
+.phone-mail .phone{
+    float: left;
+    margin-left: 53px;
+    line-height: 30px;
+    font-size: 10px;
+    color: #5f5f5f;
+}
+.phone-mail .mail{
+    font-size: 8px;
+    float: right;
+    margin-right: 15px;
+    line-height: 30px;
+    color: #5f5f5f;
+}
+.foot .recommendation{
+    width: 350px;
+    height:  60px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -175px;
+}
+.recommendation span{
+    display: block;
+    line-height: 19px;
+    font-size: 12px;
+    color: #535353;
+    text-align: center;
+}
+.foot .official{
+    width: 144px;
+    height: 131px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.official .focus{
+    line-height: 24px;
+    font-size: 12px;
+    color: #535353;
+}
+.official ul{
+    width: 144px;
+    height: 107px;
+}
+.official ul .wechat{
+    float: left;
+    width: 56px;
+}
+.wechat a{
+    width: 56px;
+    height: 54px;
+    display: block;
+}
+.wechat span{
+    line-height: 24px;
+    font-size: 10px;
+    color: #535353;
+    text-align: center;
+}
+.official ul .weibo{
+    float: right;
+    width: 66px;
+}
+.weibo a{
+    width: 59px;
+    height: 54px;
+    display: block;
+    text-align: right;
+}
+.weibo span{
+    line-height: 24px;
+    font-size: 10px;
+    color: #535353;
+    text-align: right;
+}

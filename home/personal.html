@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>渔你同行-个人中心</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/nav.css"> 
+    <link rel="stylesheet" href="css/personal.css">
+    <link rel="stylesheet" href="css/personal-settings.css">
+    <link rel="stylesheet" href="css/personal-order.css">
+    <link rel="stylesheet" href="css/personal-album.css">
+    <link rel="stylesheet" href="css/personal-video.css">
+    <link rel="stylesheet" href="css/personal-msg.css">
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="js/personal-btn.js"></script>
+</head>
+<body>
+ <!--固定渔村导航栏-->
+<div class="fish-nav">
+    <div class="fish-nav-content">
+        <div class="logo">
+            <img src="img/index/fish-logo.gif" alt="网站图标">
+        </div>
+        <ul>
+            <li>
+                <a href="index.html" >首页</a>
+            </li>
+            <li>
+                <a href="meet.html">遇见渔村</a>
+            </li>
+            <li>
+                <a href="##">活动中心</a>
+            </li>
+            <li class="current-nav">
+                <a href="personal.html">个人中心</a>
+            </li>
+        </ul>
+        <div class="nav_login">
+          <div class="user-nav isLogin offLogin">
+              <a href="##"><img src="img/index/nav-qq.png" alt="QQ登录"></a>
+              <a href="##"><img src="img/index/nav-wechat.png" alt="微信登录"></a>
+              <a href="##"><img src="img/index/nav-sina.png" alt="新浪微登录"></a>
+              <div class="user-nav-in">
+                  <a href="login.html" class="login">登录</a><em>|</em>
+                  <a href="register.html" class="register">注册</a>
+              </div>
+          </div>
+
+          <div class="navLogin isLogin onLogin">
+              <div class="userHead">
+                  <img src="img/personal/userHead.jpg" alt="用户头像">
+              </div>
+              <div class="username">
+                  橘子小姐
+
+              </div>
+              <div class="quitLogin">
+                  退出登录
+              </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="p-wrap">
+    <!--固定个人中心展示页面-->
+    <div class="fisherman">
+    </div>
+    <!--个人中心主页面-->
+    <div class="p-main">
+        <div class="p-main-left">
+            <div class="big-userhead">
+
+            </div>
+            <div class="user-lv-name-sex">
+                <b></b>
+                <h5>橘子小姐</h5>
+                <em></em>
+                <span>经验值300/财富值100</span>
+            </div>
+            <div class="user-focus-fan">
+                <div class="focus-fan">
+                    <div class="focus">
+                        <a href="#3">关注</a>
+                        <span>15</span>
+                    </div>
+                    <div class="fan">
+                        <a href="##">粉丝</a>
+                        <span>32</span>
+                    </div>
+                </div>
+                <div class="sign">
+                    "世界这么大，一起去看看"
+                </div>
+            </div>
+            <div class="user-honor-header">
+                我的勋章
+            </div>
+            <div class="user-honor">
+                <a href="##"></a>
+                <a href="##"></a>
+                <div class="user-honor-right">
+                </div>
+            </div>
+            <div class="p-setting">
+                <a href="##">个人设置</a>
+            </div>
+            <div class="user-activity">
+                <a href="##" class="user-activity-header">我的活动</a>
+                <ul>
+                    <li><a href="javascript:void(0)">我的收藏</a></li>
+                    <li><a href="javascript:void(0)">我的点评</a></li>
+                    <li><a href="javascript:void(0)" onclick="go(this)">我的订单</a></li>
+                    <li><a href="javascript:void(0)" >我的购物车</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="p-main-right">
+            <div class="p-main-right-header">
+                <ul>
+                    <li><a href="##">我的画册</a></li>
+                    <li><a href="##">我的直播</a></li>
+                    <li><a href="##">我的消息</a></li>
+                </ul>
+            </div>
+            <!--***********************************************************************************-->
+            <!--我的关注模块-->
+            <!--粉丝模块-->
+            <!--***********************************************************************************-->
+            <!--个人设置模块-->
+            <div class="personal-settings ">
+                <div class="personal-settings-header">
+                    个人设置
+                    <a href="##"></a>
+                </div>
+                <div class="form">
+                    <form action="" name="changeHead">
+                    <label class="setting-head blueDot">头像：</label>
+                    <div class="setting-head-in">
+                        <div class="setting-head-img">
+                        </div>
+                        <input type="button" value="本地上传" class="local-upload">
+                        <input type="submit" value="完成" class="upload-finished">
+                    </div>
+                    </form><br>
+                    <div class="setting-name-out">
+                        <label class="setting-name blueDot">昵称：</label>
+                        <input type="text"><br>
+                    </div>
+                    <div class="setting-sex-out">
+                        <label class="setting-sex grayDot">性别：</label>
+                        男 <input type="radio" name="sex">
+                        女 <input type="radio" name="sex"><br>
+                    </div>
+                    <div class="setting-birth-out">
+                        <label class="setting-birth blueDot">生日：</label>
+                        <input type="date"><br>
+                    </div>
+                    <div class="setting-address-out">
+                        <label class="setting-address grayDot">地址：</label>
+                        <input type="text"><br>
+                    </div>
+                    <div class="setting-email-out">
+                        <label class="setting-email grayDot">邮箱：</label>
+                        <input type="text"><br>
+                    </div>
+                    <div class="setting-sign-out">
+                        <label class="setting-sign grayDot">签名：</label>
+                        <textarea></textarea><br>
+                    </div>
+                    <div class="data-finished">资料完整度</div>
+                    <div class="setting-submit">
+                        <p>完成</p>
+                    </div>
+                </div>
+
+            </div>
+            <!--***********************************************************************************-->
+            <!--我的活动#收藏模块-->
+            <div class="personal-colloct "></div>
+            <!--我的活动#评论模块-->
+            <div class="personal-comment personal-hide"></div>
+            <!--我的活动#订单模块-->
+            <div class="personal-order personal-hide"></div>
+            <!--我的活动#购物车模块-->
+            <div class="personal-shoppingcar personal-hide"></div>
+            <!--***********************************************************************************-->
+            <!--我的画册模块-->
+            <div class="personal-album personal-hide">
+                <div class="album-first">
+                    <div class="album-first-left album-describe">
+                        <div class="album-about">
+                            <div class="admire">
+                                112
+                            </div>
+                            <div class="collect">
+                                4
+                            </div>
+                            <div class="comment">
+                                33
+                            </div>
+                        </div>
+                        <h5>[渔村]/我在这里等你，说走就走的海鲜</h5>
+                        <span>杭州-东沙村<em>2017-6-18 10:18</em></span>
+                        <div class="album-intro">
+                            渔村仍旧保持着最原始的模样，朴素自然，每天清晨渔民都会回到
+                            海边带着一晚捕获的海鲜渔村海水非常宁静..渔村海水非常宁静，
+                            远看海上停泊的船就是玩具一般。渔村有着非常美丽的日落，傍晚
+                            时分来到这里是不错的选择。
+                        </div>
+
+                    </div>
+                    <div class="album-first-right album-show">
+                        <a href="##"><img src="img/personal/personal-album/photo01.png"></a>
+                        <div class="village-name">
+                            <span>东沙村/6月</span>
+                        </div>
+                        <div class="photo-num">
+                            15图
+                        </div>
+                    </div>
+                </div>
+                <div class="album-second">
+                    <div class="album-second-left album-show ">
+                        <a href="##"><img src="img/personal/personal-album/photo02.png"></a>
+                        <div class="village-name">
+                            <span>石浦港畔/10月</span>
+                        </div>
+                        <div class="photo-num">
+                            15图
+                        </div>
+
+                    </div>
+                    <div class="album-second-right  album-describe">
+
+                        <div class="album-about">
+                            <div class="admire">
+                                112
+                            </div>
+                            <div class="collect">
+                                4
+                            </div>
+                            <div class="comment">
+                                33
+                            </div>
+                        </div>
+                        <h5>第一次来渔村呢，纪念一下</h5>
+                        <span>杭州-东沙村<em>2017-6-18 10:18</em></span>
+                        <div class="album-intro">
+                            海滩上也有很多渔民在摆摊卖海鲜，海鲜都特备新鲜个头也
+                            很大，在海里还是在岸上都停靠着许多彩色原形的渔船，里
+                            面可以坐人，做成这样的形状也是为了方便渔民捞海鲜和放
+                            置海鲜，海面在旭日的照射下波光粼粼，整个渔村都弥漫着
+                            一股咸腥味，不习惯的人，在这里是呆不上半小时的。
+                        </div>
+                    </div>
+                </div>
+                <div class="album-third">
+                    <div class="album-third-left album-show ">
+                        <a href="##"><img src="img/personal/personal-album/photo03.png"></a>
+                        <div class="village-name">
+                            <span>皇城沙滩/9月</span>
+                        </div>
+                        <div class="photo-num">
+                            10图
+                        </div>
+
+                    </div>
+                    <div class="album-third-right  album-describe">
+
+                        <div class="album-about">
+                            <div class="admire">
+                                112
+                            </div>
+                            <div class="collect">
+                                4
+                            </div>
+                            <div class="comment">
+                                33
+                            </div>
+                        </div>
+                        <h5>在中国渔村,最美的莫过于皇城沙滩</h5>
+                        <span>杭州-皇城沙滩<em>2017-6-18 10:18</em></span>
+                        <div class="album-intro">
+                            海水湿漉漉地飘浮在铁锈色的沙滩上，脚底的沙滩细滑油润
+                            却坚如铁板，在这里吹吹海风，特别喜欢这里，感觉这里才
+                            可以代表美奈这座安静的小城。据说夕阳不错，我们时间来
+                            不及了就没往下走，只是在上面拍了拍照，
+                        </div>
+                    </div>
+                </div>
+                <div class="album-fourth">
+                    <div class="album-fourth-left album-describe">
+                        <div class="album-about">
+                            <div class="admire">
+                                112
+                            </div>
+                            <div class="collect">
+                                4
+                            </div>
+                            <div class="comment">
+                                33
+                            </div>
+                        </div>
+                        <h5>【渔文化】去民俗街逛逛</h5>
+                        <span>杭州-东沙村<em>2017-6-18 10:18</em></span>
+                        <div class="album-intro">
+                            在渔网作坊里，工人一边织网一边教授编织技巧;海水湿漉漉地飘浮在铁锈色的沙
+                            滩上。这里就如其名，就是个小渔村，交通很不方便。
+                            在渔网作坊里，工人一边织网一边教授编织技巧;海水湿漉漉地飘浮在铁锈色的沙
+                            滩上。这里就如其名，就是个小渔村，交通很不方便。
+                            在渔网作坊里，工人一边织网一边教授编织技巧;海水湿漉漉地飘浮在铁锈色的沙
+                            滩上。这里就如其名，就是个小渔村，交通很不方便。
+                        </div>
+
+                    </div>
+                    <div class="album-fourth-right album-show">
+                        <a href="##"><img src="img/personal/personal-album/photo01.png"></a>
+                        <div class="village-name">
+                            <span>东沙村/6月</span>
+                        </div>
+                        <div class="photo-num">
+                            15图
+                        </div>
+                    </div>
+                </div>
+                <div class="personal-album-total">
+                    共<strong>4</strong>本画册
+                </div>
+            </div>
+            <!--我的视频模块-->
+            <div class="personal-video personal-hide">
+                这是我的视频
+            </div>
+            <!--我的消息模块-->
+            <div class="personal-msg personal-hide">
+                这是我的消息
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/navLogin.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

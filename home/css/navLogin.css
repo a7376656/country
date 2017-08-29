@@ -1,0 +1,37 @@
+.navLogin{
+    float: right;
+    height:60px;
+}
+.navLogin .userHead{
+    float: left;
+    width:45px;
+    height:45px;
+    margin-top:4px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.navLogin .userHead img{
+    width:100%;
+}
+.navLogin .username{
+    float: left;
+    height:60px;
+    line-height: 60px;
+    font-size:14px;
+    color: #66605e;
+    padding-left:18px;
+    padding-right:18px;
+    cursor: pointer;
+}
+.navLogin .quitLogin{
+    float: left;
+    width:75px;
+    height:24px;
+    background: url(../img/personal/quitLogin.png) no-repeat 0 0 ;
+    margin-top:19px;
+    font-size:14px;
+    color: #c67234;
+    padding-left:8px;
+    cursor: pointer;
+}

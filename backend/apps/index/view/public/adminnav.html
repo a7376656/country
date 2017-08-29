@@ -1,0 +1,38 @@
+<div class="navbar-default navbar-fixed-top" role="navigation" style="background-color:#fff;">
+  <div class="navbar-header">
+     　<!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
+       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+         <span class="sr-only">Toggle Navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+       <a href="javascript:openapp('/Web/bbs/admin/Index/show','首页');" class="navbar-brand til" style="color:#595856; font-size:24px; font-family:'微软雅黑'">后台管理系统</a>
+  </div>
+  <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+  <div class="collapse navbar-collapse navbar-responsive-collapse">
+      
+    <ul class="nav navbar-nav pull-right nav_right" id="main-menu-user">
+      <!-- <li class="dropdown user offline">
+          <a class="dropdown-toggle user" data-toggle="dropdown" href="#">
+            <span class='unlogin'>登录</span> <b class="caret"> </b>
+          </a>
+          <ul class="dropdown-menu pull-right">
+             <li><a href="javascript:;" class="to_login"><i class="fa fa-sign-in"></i> &nbsp;登录</a></li>
+             <li class="divider"></li>
+             <li><a href="javascript:;" class="to_register"><i class="fa fa-user"></i> &nbsp;注册</a></li>
+          </ul>
+      </li> -->
+      <li class="dropdown">
+          <a class="dropdown-toggle user" data-toggle="dropdown" href="#">
+          欢迎，<span class="user-nicename"></span> <b class="caret"></b></a>
+          <ul class="dropdown-menu pull-right">
+             <li><a href="#"><i class="fa fa-user"></i> &nbsp;修改密码</a></li>
+             <li class="divider"></li>
+             <li><a href="__URL__/../Login/logout" class="logout_submit"><i class="fa fa-sign-out"></i> &nbsp;退出</a></li>
+          </ul>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<script src="__JS__/sidebar-menu.js"></script>
+<script>
+$.sidebarMenu($('.sidebar-menu'))
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$.ajax({
+		type: "get",
+		url: "__URL__/../Login/nav_login",
+		dataType: "json",
+		success: function(data){
+			$(".user-nicename").html(data.msg);
+		},
+		error: function(jqXHR){
+			alert(jqXHR.status);
+		}
+	})
+})
+</script>

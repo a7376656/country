@@ -1,0 +1,8 @@
+/* 个人设置模块相关样式 */
+.p-main .p-main-right .personal-order{
+    width:797px;
+    height:734px;
+    position: absolute;
+    background: url(../img/personal/order.png) no-repeat 0 0 ;
+    margin-top: 57px;
+}

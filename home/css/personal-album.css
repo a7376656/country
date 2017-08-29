@@ -1,0 +1,200 @@
+/* 相册模块相关样式 */
+.p-main .p-main-right .personal-album{
+    width:797px;
+    height:1161px;
+    background: url(../img/personal/personal-album/personalAlbumBg.png) repeat-y 0 0 ;
+    position: absolute;
+    padding-top: 60px;
+}
+.personal-album .album-first{
+    width:797px;
+    height:244px;
+    margin-bottom: 25px;
+}
+.personal-album .album-first .album-first-left{
+    float: left;
+    width:390px;
+    padding-left: 10px;
+    height:244px;
+}
+.personal-album  .album-describe .album-about{
+    width:100%;
+    height:19px;
+    margin-bottom: 31px;
+}
+.personal-album .album-describe .admire,
+.personal-album .album-describe .collect,
+.personal-album .album-describe .comment
+{
+    float: left;
+    padding-left: 25px;
+    font-size:10px;
+    color: #7b7674;
+    width:20px;
+    line-height: 19px;
+    height: 19px;
+    margin-right: 67px;
+    background: url(../img/personal/personal-album/admire.png) no-repeat 0 0 ;
+}
+.personal-album  .album-describe .collect{
+    background: url(../img/personal/personal-album/collect.png) no-repeat 0 0 ;
+}
+.personal-album  .album-describe .comment{
+    background: url(../img/personal/personal-album/comment.png) no-repeat 0 0 ;
+}
+.personal-album .album-describe h5{
+    width:100%;
+    height:18px;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ed9c35;
+}
+.personal-album .album-describe span{
+    font-size:10px;
+    color: #9d9694;
+    display: block;
+    margin-bottom: 45px;
+}
+.personal-album .album-describe span em{
+    font-size:9px;
+    margin-left:24px ;
+
+}
+.personal-album .album-describe .album-intro{
+    width:100%;
+    text-align: justify;
+    color: #676462;
+    font-size:12px;
+}
+.personal-album .album-first-right{
+    width:370px;
+    height:253px;
+    float: left;
+    margin-left: 10px;
+    margin-top: -23px;
+    position: relative;
+}
+.personal-album .album-first-right a{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.personal-album  .village-name{
+    position: absolute;
+    background: url(../img/personal/personal-album/villageAlbumNameLeft.png) no-repeat 0 0 ;
+    padding-left: 19px;
+    height:42px;
+    top:75%;
+    left:-17px;
+    cursor: pointer;
+}
+.personal-album  .village-name span{
+    display: block;
+    height:42px;
+    font-size:14px;
+    color: #fff;
+    line-height:45px;
+    background: url(../img/personal/personal-album/villageAlbumNameRight.png) no-repeat right top;
+    padding-right: 15px;
+}
+.personal-album .photo-num{
+    position: absolute;
+    width:36px;
+    height:36px;
+    bottom:-18px;
+    right:-18px;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    background: url(../img/personal/personal-album/photoNumBg.png) no-repeat 0 0 ;
+    font-size:12px;
+    cursor: pointer;
+}
+/* 第二个画册排版 */
+.personal-album  .album-second{
+    width:781px;
+    height:275px;
+    padding-left: 16px;
+    margin-bottom: 34px;
+}
+.personal-album  .album-second .album-second-left{
+    width:400px;
+    float: left;
+    height:244px;
+    position: relative;
+}
+.personal-album  .album-second .album-second-right{
+    width:380px;
+    height:244px;
+    float: left;
+}
+.personal-album  .album-second  .album-second-left .village-name{
+}
+.personal-album  .album-second  .album-second-left .photo-num{
+    bottom: -7px;
+    right:12px;
+}
+/* 第三个画册排版*/
+.personal-album  .album-third{
+    width:727px;
+    height:258px;
+    padding-left: 70px;
+    margin-bottom: 35px;
+}
+.personal-album  .album-third .album-third-left{
+    width:380px;
+    float: left;
+    height:258px;
+    position: relative;
+}
+.personal-album  .album-third .album-third-right{
+    width:340px;
+    height:258px;
+    float: left;
+}
+.personal-album  .album-third  .album-third-left .photo-num{
+    right:19px;
+}
+/* 第四个画册排版 */
+.personal-album  .album-fourth{
+    width:100%;
+    height:225px;
+    margin-bottom: 29px;
+}
+.personal-album  .album-fourth .album-fourth-left{
+    width:409px;
+    float: left;
+    height:225px;
+    position: relative;
+    margin-right: 66px;
+}
+.personal-album  .album-fourth .album-fourth-right{
+    width:320px;
+    height:225px;
+    float: left;
+    position: relative;
+}
+.personal-album  .album-fourth .album-fourth-right a img{
+    width:100%;
+}
+.personal-album  .album-fourth .album-fourth-left .photo-num {
+    right: 19px;
+}
+/*画册总数量显示*/
+.personal-album-total{
+    width:100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px dotted #9f9fa0;
+    border-bottom: 1px dotted #9f9fa0;
+    height:30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #9f9fa0;
+    text-align: center;
+
+}
+.personal-album-total strong{
+    color: #f5ac4d;
+}

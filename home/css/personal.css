@@ -1,0 +1,225 @@
+.p-wrap{
+    width:1024px;
+    margin:0 auto;
+    background: url(../img/personal/p-wrapBg.jpg) repeat-y 0 0 ;
+    overflow: hidden;
+}
+.p-wrap .fisherman{
+    width:1024px;
+    height:587px;
+    background: url(../img/personal/personalBg.png) no-repeat 0 0 ;
+}
+.personal-hide{
+    display: none;
+}
+.personal-show{
+    display: block;
+}
+
+/* for main */
+.p-wrap .p-main{
+    width:1000px;
+    margin:0 auto;
+}
+.p-wrap .p-main .p-main-left{
+    width:186px;
+    height:793px;
+    float: left;
+    background: url(../img/personal/pLeftBg.png) no-repeat 0 0 ;
+    position: relative;
+}
+.p-wrap .p-main .p-main-left .big-userhead{
+    position: absolute;
+    width:100px;
+    height:100px;
+    top:-50px;
+    left:50%;
+    margin-left:-58px;
+    border-radius: 50%;
+    border:4px solid #fff;
+    background: url(../img/personal/userHead.jpg) no-repeat 0 0 ;
+    background-size: 100%;
+}
+.p-wrap .p-main .p-main-left .user-lv-name-sex{
+    margin:0 auto;
+    margin-top: 75px;
+    width:130px;
+    height:30px;
+
+}
+.p-wrap .p-main .p-main-left .user-lv-name-sex b{
+    float: left;
+    width:38px;
+    height:19px;
+    background: url(../img/personal/levelNum.png) no-repeat 0 0 ;
+}
+.p-wrap .p-main .p-main-left .user-lv-name-sex h5{
+    float: left;
+    font-size:14px;
+    color: #504a48;
+}
+.p-wrap .p-main .p-main-left .user-lv-name-sex em{
+    float: left;
+    width:18px;
+    height:14px;
+    background: url(../img/personal/sexIcon.png) no-repeat 0 0 ;
+    border-top:2px solid transparent ;
+}
+.p-wrap .p-main .p-main-left .user-lv-name-sex span{
+    float: left;
+    font-size:20%;
+}
+.p-wrap .p-main .p-main-left .user-focus-fan{
+    width:148px;
+    margin:0 auto;
+    font-size:10px;
+    margin-top:27px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.p-wrap .p-main .p-main-left .user-focus-fan .focus-fan{
+    overflow: hidden;
+}
+.p-wrap .p-main .p-main-left .user-focus-fan .focus{
+    width:50%;
+    float: left;
+}
+.p-wrap .p-main .p-main-left .user-focus-fan .focus a,
+.p-wrap .p-main .p-main-left .user-focus-fan .fan a,
+.p-wrap .p-main .p-main-left .user-focus-fan .focus span,
+.p-wrap .p-main .p-main-left .user-focus-fan .fan span
+{
+    display: block;
+    width:100%;
+    text-align: center;
+}
+.p-wrap .p-main .p-main-left .user-focus-fan .fan{
+    width:50%;
+    float: left;
+}
+.p-wrap .p-main .p-main-left .user-focus-fan .sign{
+    float: left;
+    margin-top:10px;
+}
+.p-wrap .p-main .p-main-left .user-honor-header{
+    width:172px;
+    text-align: center;
+    height:19px;
+    font-size: 11px;
+    margin-top:60px;
+    margin-bottom: 20px;
+}
+.p-wrap .p-main .p-main-left .user-honor{
+    width:108px;
+    height:46px;
+    margin:0 auto;
+    background: url(../img/personal/honorGt.png) no-repeat 0 0 ;
+    padding-left: 18px;
+}
+.p-wrap .p-main .p-main-left .user-honor .user-honor-right{
+    float: right;
+    height:35px;
+    width:18px;
+    background: url(../img/personal/honorLt.png) no-repeat 0 0 ;
+}
+.p-wrap .p-main .p-main-left .user-honor a{
+    float: left;
+    width:45px;
+    height:45px;
+    background: url(../img/personal/honor1.png) no-repeat 0 0 ;
+}
+.p-wrap .p-main .p-main-left .user-honor a:nth-child(2){
+    background: url(../img/personal/honor2.png) no-repeat 0 0 ;
+}
+.p-wrap .p-main .p-main-left .p-setting{
+    width:110px;
+    height:24px;
+    margin:0 auto;
+    text-align: center;
+    margin-top:8px;
+    margin-bottom: 32px;
+}
+.p-wrap .p-main .p-main-left .p-setting a{
+    color: #fff;
+    font-size:11px;
+    line-height: 24px;
+    text-align: center;
+    display: block;
+    width:110px;
+    height:24px;
+    background: url(../img/personal/settingsBtn.png) no-repeat 0 0 ;
+}
+.p-wrap .p-main .p-main-left .p-setting a:hover{
+    background: url(../img/personal/settingsBtnHover.png) no-repeat 0 0 ;
+}
+.p-wrap .p-main .p-main-left .user-activity{
+    width:100%;
+    height: 10px;
+}
+.p-wrap .p-main .p-main-left .user-activity .user-activity-header{
+    display: block;
+    width:184px;
+    height:35px;
+    background: url(../img/personal/activityBtn.png) no-repeat 0 0 ;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+}
+.p-wrap .p-main .p-main-left .user-activity ul{
+    width:102px;
+    height:276px;
+    background-color: #fff;
+    padding:1px;
+    margin-left: 32px;
+}
+.p-wrap .p-main .p-main-left .user-activity ul li{
+    margin-top: 40px;
+    width:102px;
+    text-align: center;
+
+}
+.p-wrap .p-main .p-main-left .user-activity ul li a{
+    color: #000;
+    font-size: 12px;
+}
+.p-wrap .p-main .p-main-left .user-activity ul li a:hover{
+    color: #f5ac4d;
+}
+.p-main .p-main-right{
+    width:797px;
+    padding-top: 83px;
+    float: left;
+}
+.p-main .p-main-right .p-main-right-header{
+    width:100%;
+    height:134px;
+    background-color: #f4f4f5;
+    border-top: 1px solid #f4f4f5;
+}
+.p-main .p-main-right .p-main-right-header ul{
+    margin-left:73px;
+    margin-top: 22px;
+}
+.p-main .p-main-right .p-main-right-header ul li{
+    float: left;
+    margin-right: 207px;
+}
+.p-main .p-main-right .p-main-right-header ul li:nth-child(3){
+    margin-right: 95px;
+}
+.p-main .p-main-right .p-main-right-header ul li a{
+    width:70px;
+    height:90px;
+    display: block;
+    padding-top:75px;
+    text-align: center;
+    font-size: 12px;
+    background: url(../img/personal/albumIcon.png) no-repeat 0 0 ;
+}
+.p-main .p-main-right .p-main-right-header ul li a:nth-child(2){
+    background: url(../img/personal/videoIcon.png) no-repeat 0 0 ;
+}
+.p-main .p-main-right .p-main-right-header ul li a:nth-child(3){
+    background: url(../img/personal/msgIcon.png) no-repeat 0 0 ;
+}

@@ -1,0 +1,191 @@
+/* 个人设置模块相关样式 */
+.p-main .p-main-right .personal-settings{
+    width:712px;
+    position: absolute;
+}
+.p-main .p-main-right .personal-settings .personal-settings-header{
+    width:712px;
+    height:28px;
+    border:1px solid #9f9fa0;
+    padding-left:84px;
+    color: #ed9c35;
+    font-size:14px;
+    line-height: 28px;
+    margin-top: 58px;
+}
+.p-main .p-main-right .personal-settings .personal-settings-header a{
+    float: right;
+    width:17px;
+    height:17px;
+    background: url(../img/personal/settingIcon.png) no-repeat 0  0;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+.p-main .p-main-right .personal-settings .form{
+    width:798px;
+    float: left;
+    padding-left:83px;
+    padding-top: 20px;
+}
+.p-main .p-main-right .personal-settings .form form{
+    overflow: hidden;
+}
+.blueDot{
+    background: url(../img/personal/blueDot.png) no-repeat 0 0 ;
+    font-size:14px;
+}
+.grayDot{
+    background: url(../img/personal/grayDot.png) no-repeat 0 0 ;
+    font-size:14px;
+
+}
+.p-main .p-main-right .personal-settings .form label{
+    float: left;
+    padding-left: 18px;
+    height:14px;
+    line-height: 14px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+.p-main .p-main-right .personal-settings .form label.setting-head{
+    margin-bottom: 136px;
+    margin-top: 20px;
+}
+.p-main .p-main-right .personal-settings .form .setting-head-in{
+    height:194px;
+    width:650px;
+    padding-left: 54px;
+    float: left;
+}
+.p-main .p-main-right .personal-settings .form .setting-head-in .setting-head-img{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    background: url(../img/personal/userHead.jpg) no-repeat 0 0 ;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-left:20px;
+}
+.p-main .p-main-right .personal-settings .form .setting-head-in input.local-upload{
+    width:62px;
+    height: 23px;
+    background: url(../img/personal/localUploadBtn.png) no-repeat 0 0 ;
+    font-size: 12px;
+    line-height: 23px;
+    border: none;
+    outline: none;
+    margin-right:54px;
+    margin-left:10px;
+    color: #fff;
+}
+.p-main .p-main-right .personal-settings .form .setting-head-in input.local-upload:hover{
+    background: url(../img/personal/localUploadBtnHover.png) no-repeat 0 0 ;
+
+}
+.p-main .p-main-right .personal-settings .form .setting-head-in input.upload-finished{
+    width:51px;
+    height: 23px;
+    background: url(../img/personal/UploadfinishBtn.png) no-repeat 0 0 ;
+    font-size: 12px;
+    line-height: 23px;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.p-main .p-main-right .personal-settings .form .setting-head-in input.upload-finished:hover{
+    background: url(../img/personal/UploadfinishBtnHover.png) no-repeat 0 0 ;
+}
+.p-main .p-main-right .personal-settings .form div{
+    padding-top: 1px;
+    margin-bottom: 10px;
+}
+.p-main .p-main-right .personal-settings .form  input{
+    border:1px solid #9f9fa0 ;
+    padding-left: 5px;
+    font-size:12px;
+}
+.p-main .p-main-right .personal-settings .form .setting-name-out{
+    width:100%;
+    height:35px;
+}
+.p-main .p-main-right .personal-settings .form .setting-name-out input{
+    width:482px;
+    height:32px;
+}
+.p-main .p-main-right .personal-settings .form .setting-sex-out{
+    width:100%;
+    height:35px;
+    font-size: 12px;
+}
+.p-main .p-main-right .personal-settings .form .setting-sex-out input{
+    width:14px;
+    height:14px;
+    margin-top:10px;
+}
+.p-main .p-main-right .personal-settings .form .setting-birth-out,
+.p-main .p-main-right .personal-settings .form .setting-address-out,
+.p-main .p-main-right .personal-settings .form .setting-sign-out,
+.p-main .p-main-right .personal-settings .form .setting-email-out
+{
+    width:100%;
+    height:35px;
+}
+.p-main .p-main-right .personal-settings .form .setting-birth-out input,
+.p-main .p-main-right .personal-settings .form .setting-address-out input ,
+.p-main .p-main-right .personal-settings .form .setting-sign-out input,
+.p-main .p-main-right .personal-settings .form .setting-email-out input
+{
+    width:482px;
+    height:32px;
+}
+.p-main .p-main-right .personal-settings .form .data-finished{
+    background: url(../img/personal/dataFinished.png) no-repeat 0 0 ;
+    padding-left: 265px;
+    height:21px;
+    width:263px;
+    font-size: 12px;
+    line-height: 19px;
+    float: left;
+    margin-top: 15px;
+}
+.p-main .p-main-right .personal-settings .form  .setting-submit{
+    width:50px;
+    float: left;
+    height:21px;
+    margin-top: 15px;
+
+}
+.p-main .p-main-right .personal-settings .form  .setting-submit p{
+    width:49px;
+    height:21px;
+    background: url(../img/personal/blueBtn.png) no-repeat 0 0 ;
+    margin-bottom: 20px;
+    font-size:14px;
+    line-height: 21px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.p-main .p-main-right .personal-settings .form  .setting-submit p:hover{
+    background: url(../img/personal/blueBtnHover.png) no-repeat 0 0 ;
+}
+
+.personal-settings textarea{
+    width:477px;
+    min-height:78px;
+    padding-top: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border:1px solid #9f9fa0 ;
+    font-size:12px;
+    resize: none;
+}
+
+.setting-sign-out{
+    height: 120px;
+    padding-bottom: 90px;
+}
+
+.setting-submit{
+    padding-bottom: 30px;
+}

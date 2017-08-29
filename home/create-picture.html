@@ -1,0 +1,131 @@
+<html> 
+ <head> 
+  <meta  charset="utf-8" />
+  <title>创建画册</title>
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
+  <!-- 
+  <link rel="stylesheet" href="css/navNoLogin.css">
+  <link rel="stylesheet" href="css/navLogin.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/nav.css">  
+  <link rel="stylesheet" type="text/css" href="css/create-picture.css">  
+ </head> 
+ <body> 
+ <!--固定渔村导航栏-->
+<div class="fish-nav">
+    <div class="fish-nav-content">
+        <div class="logo">
+            <img src="img/index/fish-logo.gif" alt="网站图标">
+        </div>
+        <ul>
+            <li>
+                <a href="index.html" >首页</a>
+            </li>
+            <li>
+                <a href="meet.html">遇见渔村</a>
+            </li>
+            <li>
+                <a href="##">活动中心</a>
+            </li>
+            <li class="current-nav">
+                <a href="personal.html">个人中心</a>
+            </li>
+        </ul>
+        <div class="nav_login">
+          <div class="user-nav isLogin offLogin">
+              <a href="##"><img src="img/index/nav-qq.png" alt="QQ登录"></a>
+              <a href="##"><img src="img/index/nav-wechat.png" alt="微信登录"></a>
+              <a href="##"><img src="img/index/nav-sina.png" alt="新浪微登录"></a>
+              <div class="user-nav-in">
+                  <a href="login.html" class="login">登录</a><em>|</em>
+                  <a href="register.html" class="register">注册</a>
+              </div>
+          </div>
+
+          <div class="navLogin isLogin onLogin">
+              <div class="userHead">
+                  <img src="img/personal/userHead.jpg" alt="用户头像">
+              </div>
+              <div class="username">
+                  橘子小姐
+
+              </div>
+              <div class="quitLogin">
+                  退出登录
+              </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<form action="admin/upload-pictures.php" method="post" enctype="multipart/form-data" name="form1">
+  <div id="picture-info">
+    <div>上传画册</div>
+
+    <img src="img/5.0/icon-1.png">
+    <label for="create-time">时间</label>
+    <input id="create-time" class='time' type="date" name="create-time" style="padding-left: 6px; width: 184px;">
+
+    <img src="img/5.0/icon-2.png" style="padding-right: 14px;">
+    <label for="create-place">地点</label>
+    <select id="sel">
+      <option>中国渔村</option>
+      <option>石塘渔村</option>
+      <option>东沙渔村</option>
+      <option>钱江渔村</option>
+      <option>白马湖渔村</option>
+      <option>湘湖渔村</option>
+    </select>
+    <input id="create-place" class='place' type="hidden" name="create-place">
+
+    <img src="img/5.0/icon-3.png" style="padding-right: 12px;">
+    <label for="create-price">花费</label>
+    <input id="create-price" class="price" type="text" name="create-price"><a href="#">无理想型？联系客服</a>
+  </div>
+  <center style="clear: both;" class="pho">  
+    <!-- 图片展示容器 -->
+      <div class="img-cont" style="position: relative;">
+          <img src="img/5.0/add.png" class="img-add">
+          <input type="file" name="userfile[]" class="imgs" id="i2" onchange='PreviewImage(this)' />   
+          <div id="next">下一步</div>
+      </div> 
+  </center>
+
+  <div id="picture-detail" class="msg" style="display:none">
+    <label for="create-title">画册题目：</label>
+    <input type="text" name="create-name" class="name" id="create-title">
+
+    <label for="create-info">内容：</label>
+    <textarea id="create-title" class="intro" name="create-intro"></textarea>
+   
+    <div id="pre">上一步</div>
+    <button id="picture-true" type="submit" onclick="return check(form1)">完成</button>
+  </div>
+
+</form>
+  <!-- js -->
+  <script  src="js/jquery-3.2.0.min.js"></script>
+  <script src="js/navLogin.js"></script>
+  <script  src="js/create-picture.js"></script>
+  <script>
+    //create-place赋值
+    $(document).ready(function(){
+      var v = $("#sel option:selected").val();
+      $("#create-place").val(v);
+      $("#sel").change(function(){
+        var v = $("#sel option:selected").val();
+        $("#create-place").val(v);
+      })
+
+      $("#next").click(function(){
+        $(".pho").css('display','none');
+        $(".msg").css('display','block');
+      })
+
+      $("#pre").click(function(){
+        $(".msg").css('display','none');
+        $(".pho").css('display','block');
+      })
+    });
+  </script>
+ </body> 
+</html>

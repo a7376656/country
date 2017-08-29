@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>后台管理系统</title>
+<link rel="stylesheet" type="text/css" href="__BOOT__CSS__/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/nav.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/admin.css">
+{include file="public/leftnavhead"}
+</head>
+<body style="min-width:900px;background:#f1f3f5;overflow:hidden;">
+{include file="public/adminnav"}
+<div class="main-container container-fluid" style="overflow:auto">
+	{include file="public/adminleftnav"}
+
+	<div class="main-content">
+		<div class="admin-nav">
+			<span class="nav-attr">当前位置:</span> &nbsp;&nbsp;&nbsp;<span class="nav-title">首页</span>
+		</div>
+		<iframe src="__ROOT__/index/Index/show" style="width:100%;min-height:500px;" frameborder="0" class="appiframe"></iframe>
+	</div>
+</div>
+
+<script type="text/javascript" src="__JS__/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="__BOOT__JS__/bootstrap.js"></script>
+<script type="text/javascript" src="__JS__/nav.js"></script>
+<script type="text/javascript" src="__JS__/admin.js"></script>
+{include file="public/leftnavscript"}
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>渔你同行注册</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+<div class="f-register">
+    <div class="r-thirdParty">
+        <ul>
+            <li><a href="##"></a></li>
+            <li><a href="##"></a></li>
+            <li><a href="##"></a></li>
+        </ul>
+        <b>使用第三方帐号注册</b>
+    </div>
+    <div id="form">
+        <input type="text" class="username" placeholder="使用手机号或者邮箱注册">
+        <input type="password" class="password" placeholder="密码">
+        <input type="password" class="password2" placeholder="请再次输入密码">
+        <input type="submit" id="submit" value="我要注册">
+    </div>
+    <div class="r-login">
+        <a href="##">回到首页</a>
+        <a href="##">点击登录</a>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#submit").click(function(){
+        if($(".username").val()=="")
+        {
+            alert('用户名不能为空');
+            $(".username").focus();
+            return false;
+        }
+        if($(".password").val()=="")
+        {
+            alert('请输入密码');
+            $(".password").focus();
+            return false;
+        }
+        if($(".password2").val()=="")
+        {
+            alert('请再次输入密码');
+            $(".password").focus();
+            return false;
+        }
+        if($(".password").val() != $(".password2").val())
+        {
+            alert('两次密码输入不一致');
+            $(".password2").focus();
+            return false;
+        }
+
+        $.ajax({
+            type: "post",
+            url: "admin/register.php",
+            dataType: "json",
+            data: {
+                username: $(".username").val(),
+                password: $(".password").val(),
+                password2: $(".password2").val()
+            },
+            success: function(data){
+                if(data.success){
+                    alert("注册成功");
+                    location.href='index.html';
+                }
+                else
+                    alert(data.msg);
+            },
+            error: function(jqXHR){
+                alert(jqXHR.status);
+            }
+        })
+    })
+});
+</script>
+</body>
+</html>

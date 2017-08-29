@@ -1,0 +1,7 @@
+/* 我的收藏模块相关样式 */
+.p-main .p-main-right .personal-settings{
+    width:797px;
+    height:400px;
+    background: red;
+    position: absolute;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>管理员管理</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/admin/common.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/admin/user.css">
+</head>
+<body style="width:100%;height:100%;padding:0;margin:0;">
+	<div class="content">
+		<input type="search" name="search" class="search"> <button class="s_search">搜 索</button>
+		<table class="table">
+			<tr>
+				<td width="50" class="th" style="font-size:16px;">ID</td>
+				<td width="160" class="th" style="font-size:16px;">用户名</td>
+				<td width="240" class="th" style="font-size:16px;">最后登录时间</td>
+				<td width="80" class="th" style="font-size:16px;">状态</td>
+				<td width="120" class="th" style="font-size:16px;">操作</td>
+			</tr>
+			{foreach name="info" item="vo"}
+			<tr>
+				<td class="void">{$vo.id}</td>
+				<td>{$vo.username}</td>
+				<td>{$vo.last_login_time}</td>
+				<td style="font-size:12px;">
+					{if condition="$vo['status'] eq 1"}
+						正常
+					{else}
+						已拉黑
+					{/if}
+				</td>
+				<td style="font-size:12px;">
+					{if condition="$vo['id'] eq 8 or $vo['username'] eq $admin_name"}
+					<span class="gray">编辑</span>| <span class="gray">拉黑</span>| <span class="gray">删除</span>
+					{else}
+						{if condition="$vo['status'] eq 1"}
+						<a href="javascript:;" class="edit">编辑</a>| <a href="javascript:;" class="on_off off">拉黑</a>| <a href="javascript:;">删除</a>
+						{else}
+						<a href="javascript:;" class="edit">编辑</a>| <a href="javascript:;" class="on_off on">启用</a>| <a href="javascript:;">删除</a>
+						{/if}
+					{/if}
+				</td>
+			</tr>
+			{/foreach}
+		</table>
+	</div>
+</body>
+</html>

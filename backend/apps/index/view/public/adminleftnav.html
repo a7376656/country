@@ -1,0 +1,85 @@
+<aside class="main-sidebar">
+<section  class="sidebar">
+	<ul class="sidebar-menu">
+	{foreach name="info" item="vo"}
+	  {if condition="$vo.rule_name eq 'admin/user/default'"}
+	  <li class="treeview">
+		<a href="#">
+		  <i class="fa fa-dashboard"></i> <span>用户中心</span> <i class="fa fa-angle-right pull-right"></i>
+		</a>
+		<ul class="treeview-menu">
+		  {foreach name="info" item="vo"}
+		  {if condition="$vo.rule_name eq 'admin/user/index'"}
+		  <li><a href="javascript:openapp('/Country/backend/index/User/index','用户管理');"><i class="fa fa-circle-o"></i> 用户管理</a></li>
+		  {/if}
+		  {/foreach}
+		  {foreach name="info" item="vo"}
+		  {if condition="$vo.rule_name eq 'admin/user/admin'"}
+		  <li><a href="javascript:openapp('/Country/backend/index/User/admin','管理员管理');"><i class="fa fa-circle-o"></i> 管理员管理</a></li>
+		  {/if}
+		  {/foreach}
+		  {foreach name="info" item="vo"}
+		  {if condition="$vo.rule_name eq 'admin/user/rbac'"}
+		  <li><a href="javascript:openapp('/Country/backend/index/User/rbac','角色管理');"><i class="fa fa-circle-o"></i> 角色管理</a></li>
+		  {/if}
+		  {/foreach}
+		</ul>
+	  </li>
+	  {/if}
+	{/foreach}
+	{foreach name="info" item="vo"}
+	  {if condition="$vo.rule_name eq 'admin/article/default'"}
+	  <li class="treeview">
+		<a href="#">
+		  <i class="fa fa-dashboard"></i> <span>内容管理</span> <i class="fa fa-angle-right pull-right"></i>
+		</a>
+		<ul class="treeview-menu">
+		  {foreach name="info" item="vo"}
+		  {if condition="$vo.rule_name eq 'admin/article/index'"}
+		  <li><a href="javascript:openapp('/Web/bbs/admin/Article/index','帖子管理');"><i class="fa fa-circle-o"></i> 帖子管理</a></li>
+		  {/if}
+		  {/foreach}
+		  {foreach name="info" item="vo"}
+		  {if condition="$vo.rule_name eq 'admin/article/reply'"}
+		  <li><a href="javascript:openapp('/Web/bbs/admin/Article/reply','回复管理');"><i class="fa fa-circle-o"></i> 回复管理</a></li>  
+		  {/if}
+		  {/foreach}
+		</ul>
+	  </li>
+	  {/if}
+	{/foreach}
+	{foreach name="info" item="vo"}
+	  {if condition="$vo.rule_name eq 'admin/section/index'"}
+	  <li class="treeview">
+		<a href="javascript:openapp('/Web/bbs/admin/Section/index','版块管理');">
+		  <i class="fa fa-dashboard"></i> <span>版块管理</span> 
+		</a>
+	  </li>
+	  {/if}
+	{/foreach}
+	</ul>
+	  <!-- <li class="treeview">
+		<a href="#">
+		  <i class="fa fa-share"></i> <span>多级</span>
+		  <i class="fa fa-angle-right pull-right"></i>
+		</a>
+		<ul class="treeview-menu">
+		  <li><a href="#"><i class="fa fa-circle-o"></i> 一级</a></li>
+		  <li>
+			<a href="#"><i class="fa fa-circle-o"></i> 一级 <i class="fa fa-angle-right pull-right"></i></a>
+			<ul class="treeview-menu">
+			  <li><a href="#"><i class="fa fa-circle-o"></i> 二级</a></li>
+			  <li>
+				<a href="#"><i class="fa fa-circle-o"></i> 二级 <i class="fa fa-angle-right pull-right"></i></a>
+				<ul class="treeview-menu">
+				  <li><a href="#"><i class="fa fa-circle-o"></i> 三级</a></li>
+				  <li><a href="#"><i class="fa fa-circle-o"></i> 三级</a></li>
+				</ul>
+			  </li>
+			</ul>
+		  </li>
+		  <li><a href="#"><i class="fa fa-circle-o"></i> 一级</a></li>
+		</ul>
+	  </li> -->
+  </section>
+ </aside>

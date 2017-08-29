@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>渔你同行</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div class="f-login">
+    <div class="thirdParty">
+        <ul>
+            <li><a href="##"></a></li>
+            <li><a href="##"></a></li>
+            <li><a href="##"></a></li>
+        </ul>
+        <b>使用第三方帐号登录</b>
+    </div>
+    <div id="form">
+        <input type="text" class="username" placeholder="使用手机号或者邮箱登录">
+        <input type="password" class="password" placeholder="密码">
+        <input type="submit" id="submit"  value="立即登录">
+    </div>
+    <div class="forget-regist">
+        <a href="##">忘记密码</a>
+        <a href="register.html">点击注册新帐号</a>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#submit").click(function(){
+        if($(".username").val()=="")
+        {
+            alert('请输入用户名！');
+            $(".username").focus();
+            return false;
+        }
+        if($(".password").val()=="")
+        {
+            alert('请输入密码！');
+            $(".password").focus();
+            return false;
+        }
+
+        $.ajax({
+            type: "post",
+            url: "admin/login.php",
+            dataType: "json",
+            data: {
+                username: $(".username").val(),
+                password: $(".password").val()
+            },
+            success: function(data){
+                if(data.success)
+                    location.href='index.html';
+                else
+                    alert(data.msg);
+            },
+            error: function(jqXHR){
+                alert(jqXHR.status);
+            }
+        })
+    })
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
